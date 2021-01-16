@@ -6,4 +6,4 @@ Wordfreak.c contains the main method for my implementation. It also contains the
 
 Wordfreak.c also contains the most important methods in my implementation: process_file() and its helper function process_string(). The first function, process_file() takes a file path and it then opens that file and handles the reading of the file. It then has a ‘buf’ buffer that gets read into from the file, as well as ‘contents’ and ‘remainder’ buffers. The ‘contents’ string contains everything in ‘remainder’ then everything in ‘buf’. The idea for this is that once when we are parsing the ‘contents’ string, once we get within MAX_WORD_LEN (100) characters from the end of ‘contents’, we want to store from the first non-alphabet character in that range to the end into ‘remainder’. This ‘remainder’ gets added to the next ‘contents’ string during the next read call. This way we do not cut off any words when parsing. More details in code comments.
 
-Video demonstration: https://vimeo.com/501278003
+Video Demonstration: https://vimeo.com/501278003
